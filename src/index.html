@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Top 10 Games</title>
   </head>
   <body>
-
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Top 10 Games</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <form class="consoles">
+            <h3>Which Platform:</h3>
+            <br>
+            <select id="platform">
+              <option value="PC">PC</option>
+              <option value="PS">Playstation 4</option>
+              <option value="XB">XBox One</option>
+              <option value="NS">Nintendo Switch</option>
+            </select>
+            <br>
+            <button type="submit" class="btn btn-danger">Search!</button>
+          </form>
+        </div>
+        <div class="col-md-8" id="center">
+          <h3>The Top 10 Games for <span id="user-pick"></span> are:</h3>
+          <ol id="top">
+            
+          </ol>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
