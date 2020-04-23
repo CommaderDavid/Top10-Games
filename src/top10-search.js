@@ -1,9 +1,10 @@
 export class BestGames {
-  constructor(pickedConsole) {
-    this.pickedConsole = pickedConsole;
-  }
+  aysnc top10Pick(pickedConsole) {
+    try {
 
-  top10Pick() {
+    } catch (error) {
+
+    }
     // For the games
     // axios({
     //   url: "https://api-v3.igdb.com/games",
