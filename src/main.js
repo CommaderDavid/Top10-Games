@@ -9,7 +9,18 @@ $(document).ready(function () {
   $("form.consoles").submit(function (e) {
     e.preventDefault();
 
-    let userPicked = parsInt($("select#platform").val());
+    const userPicked = parsInt($("select#platform").val());
+
+    if (userPicked === 6) {
+      $("#user-pick").empty().append("PC");
+    } else if (userPicked === 48) {
+      $("#user-pick").empty().append("Playstation 4");
+    } else if (userPicked === 49) {
+      $("#user-pick").empty().append("XBox One");
+    } else if (userPicked === 130) {
+      $("#user-pick").empty().append("Nintendo Switch");
+    }
+
     
   });
 });
