@@ -1,7 +1,7 @@
 export class BestGames {
   aysnc top10Pick(pickedConsole) {
     try {
-
+      const response = await axios.get('/user')
     } catch (error) {
 
     }
